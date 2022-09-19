@@ -1,22 +1,19 @@
 package autoevaluacion2.srdplas.laboral;
 
+import java.io.IOException;
+
+import autoevaluacion2.srdplas.laboral.empleados.LecturaEmpleados;
 import autoevaluacion2.srdplas.laboral.excepciones.DatosNoCorrectosException;
 
 public class CalculaNominas {
 
-	public static void main(String[] args) throws DatosNoCorrectosException {
+	public static void main(String[] args) throws DatosNoCorrectosException, IOException {
 		
-		Empleado empleado1 = new Empleado("James", "32000032G", 'H', 4, 7);
-		Empleado empleado2 = new Empleado("Ada Lovelace", "32000031R", 'F');
 		
-		//Usamos el metodo para que escriba los datos de los empleados
-		escribe(empleado1, empleado2);
 		
-		System.out.println("\nIncrementamos y cambiamos categoria\n");
-		
-		empleado2.incrAnyo();
-		empleado1.setCategoria(9);
-		escribe(empleado1, empleado2);
+		System.out.println("Leemos desde fichero");
+		LecturaEmpleados leer = new LecturaEmpleados();
+		leer.LeerFichero();
 
 	}
 
