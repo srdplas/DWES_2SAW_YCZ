@@ -13,9 +13,9 @@ public class Nomina {
 	 * @param empleado
 	 * @return sueldo del empleado por categoria y anyos trabajados
 	 */
-	public double sueldo(Empleado empleado) {
+	public static double sueldo(Empleado empleado) {
 		
-		double salario = (SUELDO_BASE[(empleado.getCategoria()-1)]+(5000*empleado.anyosTrabajados));
+		double salario = (SUELDO_BASE[(empleado.getCategoria()-1)]+(5000*empleado.getAnyosTrabajados()));
 		return salario;
 		
 	}

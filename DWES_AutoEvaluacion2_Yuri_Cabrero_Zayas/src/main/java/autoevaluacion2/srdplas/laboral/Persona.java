@@ -2,7 +2,7 @@ package autoevaluacion2.srdplas.laboral;
 
 public class Persona {
 
-	String nombre, dni;
+	private String nombre, dni;
 	char sexo;
 
 	/**
@@ -36,12 +36,33 @@ public class Persona {
 	public void setDni(String dni) {
 		this.dni = dni;
 	}
+	
+
+	public String getDni() {
+		return dni;
+	}
 
 	/**
 	 * Imprime los Datos de la Persona
 	 */
 	public void Imprime() {
 		System.out.println("Nombre: "+nombre+", DNI: "+dni);
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public char getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(char sexo) {
+		this.sexo = sexo;
 	}
 	
 	

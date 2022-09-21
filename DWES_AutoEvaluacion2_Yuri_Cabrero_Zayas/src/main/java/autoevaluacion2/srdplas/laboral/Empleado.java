@@ -5,7 +5,7 @@ import autoevaluacion2.srdplas.laboral.excepciones.DatosNoCorrectosException;
 public class Empleado extends Persona {
 
 	private int categoria;
-	int anyosTrabajados;
+	private int anyosTrabajados;
 
 	/**
 	 * 
@@ -54,6 +54,15 @@ public class Empleado extends Persona {
 		return categoria;
 	}
 
+	
+	public int getAnyosTrabajados() {
+		return anyosTrabajados;
+	}
+
+	public void setAnyosTrabajados(int anyosTrabajados) {
+		this.anyosTrabajados = anyosTrabajados;
+	}
+
 	/**
 	 * 
 	 * @param categoria
@@ -83,7 +92,7 @@ public class Empleado extends Persona {
 	 * Imprime todos los datos del Empleado
 	 */
 	public void imprime() {
-		System.out.println("Nombre: "+nombre+", DNI: "+dni+", Sexo: "+sexo+", Categoria: "+categoria+", Años Trabajados: "+anyosTrabajados);
+		System.out.println("Nombre: "+this.getNombre()+", DNI: "+this.getDni()+", Sexo: "+this.getSexo()+", Categoria: "+this.getCategoria()+", Años Trabajados: "+getAnyosTrabajados());
 	}
 
 }
