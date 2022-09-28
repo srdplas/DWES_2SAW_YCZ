@@ -19,17 +19,8 @@ public class ConexionBBDD {
 		return conexion;
 		
 	}
-	public static void cerrar(Connection conexion)throws SQLException{
-		if(conexion!=null) {
-			conexion.close();
-		}
-	}
+
 	
-	public static void cerrar(Statement st)throws SQLException{
-		if(st!=null) {
-			st.close();
-		}
-	}
 	
 
 	
