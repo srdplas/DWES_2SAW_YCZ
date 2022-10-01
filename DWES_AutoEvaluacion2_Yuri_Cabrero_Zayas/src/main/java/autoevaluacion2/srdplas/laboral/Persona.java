@@ -37,7 +37,10 @@ public class Persona {
 		this.dni = dni;
 	}
 	
-
+	/**
+	 * 
+	 * @return dni
+	 */
 	public String getDni() {
 		return dni;
 	}
@@ -49,18 +52,34 @@ public class Persona {
 		System.out.println("Nombre: "+nombre+", DNI: "+dni);
 	}
 
+	/**
+	 * 
+	 * @return nombre
+	 */
 	public String getNombre() {
 		return nombre;
 	}
 
+	/**
+	 * 
+	 * @param nombre
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
+	/**
+	 * 
+	 * @return sexo
+	 */
 	public char getSexo() {
 		return sexo;
 	}
 
+	/**
+	 * 
+	 * @param sexo
+	 */
 	public void setSexo(char sexo) {
 		this.sexo = sexo;
 	}

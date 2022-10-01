@@ -12,6 +12,12 @@ public class ConexionBBDD {
 	private static String usuario = "yuri";
 	private static String password = "yuri";
 	
+	/**
+	 * 
+	 * @return conexion
+	 * @throws SQLException
+	 * Conecta con la BBDD
+	 */
 	public static Connection getConnection() throws SQLException{
 		
 		Connection conexion = null;
