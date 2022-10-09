@@ -41,7 +41,7 @@
 						</c:choose>
 						<button type="submit" class="btn btn-success mt-3">
 							Consultar Salario</button>
-						<button type="refresh" class="btn btn-danger mt-3">
+						<button class="btn btn-danger mt-3">
 							<a href="/DWES_Tarea2_YCZ/salarioEmpleado.jsp"
 								style="text-decoration: none; color: white;">Borrar</a>
 						</button>
