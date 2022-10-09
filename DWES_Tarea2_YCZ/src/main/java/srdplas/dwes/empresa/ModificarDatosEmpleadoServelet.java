@@ -32,6 +32,7 @@ public class ModificarDatosEmpleadoServelet extends HttpServlet {
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * Recibimos DNI del jsp modificarEmpleado.jsp, realizamos una consulta con ese dni y devolvemos todos los datos
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub

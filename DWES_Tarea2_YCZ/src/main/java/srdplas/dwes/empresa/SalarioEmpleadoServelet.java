@@ -43,6 +43,7 @@ public class SalarioEmpleadoServelet extends HttpServlet {
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * Obtenemos el dni del formulario del jsp salarioEmpleado.jsp y realizamos consulta en tabla nominas para devolver la cantidad
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
